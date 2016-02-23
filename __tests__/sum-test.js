@@ -1,8 +1,11 @@
-jest.dontMock('../sum');
+jest.dontMock('../src/sum');
 
 describe('sum', function() {
   it('adds 1 + 2 to equal 3', function() {
-    var sum = require('../sum');
+    var sum = require('../src/sum');
     expect(sum(1, 2)).toBe(3);
+
+    expect(true).toBe(true);
+    console.log('hello');
   });
 });

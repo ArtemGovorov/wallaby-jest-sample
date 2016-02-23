@@ -1,5 +1,43 @@
 {
   "devDependencies": {
+    "babel": "^5.8.35",
     "jest-cli": "0.8.2"
+  },
+  "jest": {
+    "setupEnvScriptFile": "jest-setupEnvScriptFile.js",
+    "setupTestFrameworkScriptFile": "jest-setupTestFrameworkScriptFile.js",
+    "scriptPreprocessor": "jest-scriptPreprocessor.js",
+    "testRunner": "<rootDir>/node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js",
+    "testFileExtensions": [
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "unmockedModulePathPatterns": [
+      "/node_modules/jasmine-reporters",
+      "/node_modules/react",
+      "/node_modules/fbjs",
+      "/node_modules/fbjs/lib/keyMirror",
+      "/node_modules/react-dom",
+      "/node_modules/react-addons-test-utils",
+      "/node_modules/lodash",
+      "/node_modules/ramda",
+      "/node_modules/object-assign",
+      "/node_modules/moment",
+      "/node_modules/validate.js",
+      "/node_modules/enzyme",
+      "/node_modules/cheerio",
+      "/node_modules/htmlparser2",
+      "/node_modules/underscore",
+      "/node_modules/domhandler",
+      "/node_modules/object.assign",
+      "/node_modules/define-properties",
+      "/node_modules/function-bind",
+      "/node_modules/object-keys",
+      "/node_modules/object.values",
+      "/node_modules/es-abstract"
+    ]
   }
 }
